@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>AvionesYa!</title>
+</head>
+
+<body>
+    <!-- Contenedor grid -->
+    <div class="grid-content">
+        <!-- Menu de navegación -->
+        <aside class="navbar">
+            <img src="./assets/img/logo-avionesya.png" alt="logoavionesya">
+            <div class="anchors-group">
+                <div class="anchors">
+                    <a href="#aircraft">
+                        <h4>Aviones</h4>
+                        <i class="fa-solid fa-plane-departure"></i>
+                    </a>
+                </div>
+                <div class="anchors">
+                    <a href="#patch">
+                        <h4>Parches</h4>
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </div>
+                <div class="anchors">
+                    <a href="#catalogue">
+                        <h4>Catálogo</h4>
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- Filtro de busqueda -->
+        <section class="filter">
+            <input type="text" id="s" value="" placeholder="Buscar..." />
+        </section>
+        <!-- contenido galerias -->
+        <main class="content">
+            <!-- Aviones a escala -->
+            <section id="aircraft">
+                <div class="banner-id">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h2>Aviones a escala</h2>
+                </div>
+                <div class="boxes">
+                    <div class="card">
+                        <img src="./assets/img/1.webp" alt="avion lan chile">
+                        <h3>Avión a escala Lan Chile. Boeing B747</h3>
+                        <p>$23.990</p>
+                        <div class="buttons">
+                            <button>Comprar</button>
+                            <button class="button-mobile">Más info</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/2.webp" alt="avion British airways">
+                        <h3>Avión a escala Concorde British Airways.</h3>
+                        <p>$19.990</p>
+                        <div class="buttons">
+                            <button>Comprar</button>
+                            <button class="button-mobile">Más info</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/3.webp" alt="Viva air go">
+                        <h3>Avión a escala Viva Air Go Pink. Airbus a320neo.</h3>
+                        <p>$19.990</p>
+                        <div class="buttons">
+                            <button>Comprar</button>
+                            <button class="button-mobile">Más info</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/4.webp" alt="Latam">
+                        <h3>Avión a escala Latam Airbus 320.</h3>
+                        <p>$44.990</p>
+                        <div class="buttons">
+                            <button>Comprar</button>
+                            <button class="button-mobile">Más info</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/5.webp" alt="sky">
+                        <h3>Avión a escala SKY Airline A320.</h3>
+                        <p>$44.990</p>
+                        <div class="buttons">
+                            <button>Comprar</button>
+                            <button class="button-mobile">Más info</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/6.webp" alt="Iron Maiden">
+                        <h3>Avión a escala Ed Force One - Iron Maiden.</h3>
+                        <p>$79.990</p>
+                        <div class="buttons">
+                            <button>Comprar</button>
+                            <button class="button-mobile">Más info</button>
+                        </div>
+                    </div>
+            </section>
+            <!-- Parches y botones -->
+            <section id="patch">
+                <div class="banner-id">
+                    <h2>Parches y Monedas</h2>
+                    <i class="fa-solid fa-thumbtack"></i>
+                </div>
+                <div class="boxes">
+                <div class="card">
+                    <img src="./assets/img/golden-2-scaled.webp" alt="moneda dorada">
+                    <h3>Moneda dorada F-16.</h3>
+                    <p>$9.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/golden-scaled.webp" alt="moneda falcon">
+                    <h3>Moneda F-16 Fighting Falcon. Fuerza aérea de Chile.</h3>
+                    <p>$7.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/silver-2-scaled.webp" alt="moneda silver">
+                    <h3>Moneda F-16 plateada.</h3>
+                    <p>$5.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/parche-cl.jpg" alt="Parche Chile">
+                    <h3>Parche con velcro. Bandera de Chile bordada.</h3>
+                    <p>$3.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/parche-arg.webp" alt="Parche Arg">
+                    <h3>Parche con velcro. Bandera de Argentina bordada.</h3>
+                    <p>$3.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/parche-usa.webp" alt="Parche usa">
+                    <h3>Parche con velcro. Bandera Estados Unidos bordada.</h3>
+                    <p>$3.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/parche1.webp" alt="Parche Escuadrilla">
+                    <h3>Parche con velcro. Escuadrilla de Alta Acrobacia. Halcones FACH.</h3>
+                    <p>$6.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/parche2.webp" alt="Parche F-16">
+                    <h3>Parche con velcro. F-16 Fighting Falcon. Fuerza aérea de Chile.</h3>
+                    <p>$6.990</p>
+                    <div class="buttons">
+                        <button>Comprar</button>
+                        <button class="button-mobile">Más info</button>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- Catálogo -->
+            <section id="catalogue">
+                <div class="banner-id">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h2>Catálogo</h2>
+                </div>
+                <div class="pics">
+                    <img src="./assets/img/cat-1.webp" alt="1">
+                    <img src="./assets/img/cat-2.webp" alt="2">
+                    <img src="./assets/img/cat-3.webp" alt="3">
+                    <img src="./assets/img/cat-4.webp" alt="4">
+                </div>
+                <div class="more">
+                    <button>Ver más</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>AvionesYa!</h3>
+            <div class="social">
+                <a href="https://wa.me/56976369407/?text=AvionesYa! Aviones a escala que cautivaran tus sentidos."target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/avionesya/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+            </div>
+            <p>Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

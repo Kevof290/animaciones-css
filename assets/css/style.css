@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.navbar {
+    grid-area: navbar;
+    text-align: center;
+}
+
+.filter {
+    grid-area: filter;
+    text-align: center;
+    background: radial-gradient(#8FD14F, #F5F5F5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    grid-area: contenido;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FF6600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #F5F5F5;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-areas:
+    "navbar"
+    "filter"
+    "contenido"
+    "footer";
+    grid-template-rows: 250px 100px auto 120px
+}
+
+.navbar img {
+    max-width: 100%;
+    max-height: 50%;
+    margin: 5px;
+    animation: logo 3s infinite alternate;
+}
+
+@keyframes logo {
+    0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+}
+
+    50% {
+        -webkit-transform:translateX(50px);
+}
+
+    100% {
+    -webkit-transform: translateY(-80px) translateX(80px);
+    transform: translateY(-80px) translateX(80px);
+ }
+}
+
+.anchors h4 {
+    display: none;
+}
+
+.anchors {
+    display: flex;
+}
+
+.anchors-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.anchors a {
+    border-radius: 10px;
+    background-color: #FF6600;
+    color: #F5F5F5;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 15px #000;
+    margin: .8rem 0 .5rem;
+    text-wrap: balance;
+    text-align: center;
+}
+
+section input {
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+#aircraft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.card p {
+    margin: .5rem;
+}
+
+.buttons button {
+    margin: .5rem .2rem;
+    border: none;
+    background-color: #8FD14F;
+    padding: .8rem;
+    border-radius: .8rem;
+}
+
+.banner-id {
+    background-color: #FF6600;
+    display: flex;
+    justify-content: space-between;
+    min-width: 85%;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 1rem;
+    color: #F5F5F5;
+}
+
+.banner-id h2, i{
+    margin: 0 .5rem;
+    padding: .8rem;
+}
+
+.banner-id i{
+    font-size: 30px;
+}
+
+#patch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 .5rem 0;
+}
+
+#catalogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 .5rem 0;
+}
+
+.pics img {
+    width: 40%;
+    border: 1px solid #000;
+}
+.pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#catalogue button {
+    border: none;
+    background-color: #8FD14F;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+footer i {
+    font-size: 2rem;
+}
+
+@media (width >= 600px) {
+    #aircraft {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+    }
+    .boxes {
+        gap: 10px;
+    }
+    .anchors-group h4 {
+        display: flex;
+        margin-top: .5rem;
+    }
+
+    .anchors-group a{
+        padding: .2rem 1.2rem;
+    }
+}
+
+@media (width >= 1000px) {
+    .grid-content {
+        grid-template-areas:
+        "navbar filter"
+        "navbar contenido"
+        "footer contenido";
+        grid-template-columns: 300px auto;
+        grid-template-rows: 80px auto 100px;
+    }
+    .filter {
+        height: 70px;
+    }
+    .card {
+        width: 20%;
+        transition: all 0.3s ease-out;
+    }
+    .card:hover {
+        background-color: #8FD14F;
+        transform: scale(1.1);
+    }
+    .navbar img {
+        width: 50%;
+    }
+    .anchors-group {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+    .anchors a {
+        display: flex;
+        width: 150px;
+    }
+    .anchors a:hover {
+        background-color: #8FD14F;
+    }
+    .buttons button {
+        background-color: #FF6600;
+        color: #F5F5F5;
+        transition: transform .3s ease-out;
+    }
+    .buttons button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .pics img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        border: none;
+        transition: all .5s ease;
+    }
+    .pics {
+        display: flex;
+        width: 600px;
+        height: 430px;
+    }
+    .pics img:hover {
+        cursor: crosshair;
+        width: 320px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    #catalogue button {
+        margin-top: 1rem;
+        background-color: #FF6600;
+        color: #F5F5F5;
+    }
+    #catalogue button:hover {
+        background-color: #8FD14F;
+        cursor: pointer;
+    }
+    footer a:hover {
+        color: #8FD14F;
+    }
+}
